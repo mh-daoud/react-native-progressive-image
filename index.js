@@ -1,5 +1,6 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 import { Animated, View, Image, StyleSheet } from 'react-native'
+import PropTypes from 'prop-types';
 
 export default class ProgressiveImage extends Component {
   constructor(props) {
@@ -52,15 +53,15 @@ export default class ProgressiveImage extends Component {
   }
 }
 
- const styles = StyleSheet.create({
-   image: {
-     position: 'absolute',
-     top: 0,
-     bottom: 0,
-     left: 0,
-     right: 0,
-   },
- })
+const styles = StyleSheet.create({
+  image: {
+    position: 'absolute',
+    top: 0,
+    bottom: 0,
+    left: 0,
+    right: 0,
+  },
+})
 
 ProgressiveImage.propTypes = {
   placeHolderColor: PropTypes.string,
